@@ -1,0 +1,123 @@
+.profile {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 48%;
+  .profileContent {
+    width: 104%;
+    .profileRightTop {
+      height: 15%;
+      .profileCover {
+        position: absolute;
+        top: 5.1rem;
+        .coverImage {
+          width: 100%;
+          object-fit: cover;
+        }
+        .profileUserImage {
+          border-radius: 50%;
+          object-fit: cover;
+          position: absolute;
+          border: 3px solid white;
+          z-index: 4;
+        }
+      }
+      .profileInfo {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        z-index: 6;
+
+        .profileInfoUsername {
+          margin-top: 1.5rem;
+          margin-bottom: 0;
+          z-index: 4;
+        }
+        .profileInfoDesc {
+          margin: 0;
+          z-index: 4;
+        }
+      }
+    }
+    .profileNewsfeed {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile {
+    width: 18rem;
+    margin-left: 1.6rem;
+    .profileRightTop {
+      height: 10rem;
+      .profileCover {
+        width: 17rem;
+        .coverImage {
+          height: 11rem;
+        }
+        .profileUserImage {
+          top: 81%;
+          left: 3%;
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .profileInfo {
+        top: 12%;
+        left: 40%;
+        .profileInfoUsername {
+          font-size: 17px;
+        }
+        .profileInfoDesc {
+          margin-right: 0.3rem;
+          z-index: 4;
+        }
+      }
+    }
+    .profileNewsfeed {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    width: 45%;
+    margin-left: 1.6rem;
+    .profileRightTop {
+      height: 8rem;
+      .profileCover {
+        left: 0.5rem;
+        height: 10%;
+        .coverImage {
+          height: 13rem;
+        }
+        .profileUserImage {
+          top: 70%;
+          left: 5%;
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .profileInfo {
+        top: 12%;
+        left: 9rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .profileUserImage {
+    top: 20%;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+  }
+  .profileNewsfeed {
+    margin-left: 2rem;
+  }
+}

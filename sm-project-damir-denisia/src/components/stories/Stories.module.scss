@@ -1,0 +1,110 @@
+.storiesContainer {
+  width: 80%;
+  height: 20%;
+  border-radius: 10px;
+  margin-top: 5.5rem;
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  .storyWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+    .storyCircle {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      background: linear-gradient(
+        rgb(64, 93, 230),
+        rgb(88, 81, 219),
+        rgb(131, 58, 180),
+        rgb(193, 53, 132),
+        rgb(225, 48, 108),
+        rgb(253, 29, 29),
+        rgb(245, 96, 64),
+        rgb(247, 119, 55),
+        rgb(252, 175, 69),
+        rgb(255, 220, 128)
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        width: 60px;
+        height: 60px;
+      }
+      .storyProfileImg {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+      }
+    }
+    .storyUsername {
+      font-size: 0.7rem;
+    }
+  }
+  .btnScroll {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    margin: 0 3px 0 3px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+    background-color: #eaeaea;
+    box-shadow: 0 0 10px #999;
+    .btnIcon {
+      font-size: 15px;
+      margin: 2px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .storiesContainer {
+    width: 80%;
+    margin-top: 5.03rem;
+    height: 7.7em;
+    padding: 0;
+    .storyWrapper {
+      width: 100%;
+      height: 7rem;
+      justify-content: center;
+      .storyCircle {
+        margin-top: 1.6rem;
+      }
+    }
+
+    .storyUsername {
+      margin-left: 0.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .storiesContainer {
+    margin-left: 2rem;
+    .storyCircle {
+      margin-top: 1.5rem;
+    }
+    .storyUsername {
+      margin-left: 0.9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .storiesContainer {
+    margin-left: 0rem;
+  }
+}

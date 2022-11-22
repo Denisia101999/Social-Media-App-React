@@ -1,0 +1,88 @@
+.onlineFriend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 2.5rem;
+  position: relative;
+  &:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+  }
+  .onlineFriendInfo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7px;
+    // top: 30px;
+    // right: 60px;
+    z-index: 45;
+    background-color: #c13584;
+    color: white;
+    border-radius: 5px;
+    .onlineFriendInfoHeader {
+      display: flex;
+      align-items: center;
+      .onlineFriendProfilePic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 0.5rem;
+      }
+      .onlineFriendUsername {
+        font-size: 17px;
+      }
+    }
+    .onlineFriendData {
+      margin-left: 0.4rem;
+      hr {
+        width: 100%;
+        height: 0.1rem;
+      }
+    }
+  }
+  .profileImgContainer {
+    margin-right: 10px;
+    position: relative;
+    .onlineFriendPic {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .onlineSimbol {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: green;
+      border: 1px solid #eaeaea;
+      position: absolute;
+      top: 26px;
+      right: 0;
+    }
+  }
+  .onlineFriendUsername {
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .onlineFriendInfo {
+    width: 100%;
+    height: 10rem;
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .onlineFriendInfo {
+    top: 2.3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .onlineFriendInfo {
+    left: 5rem;
+    width: 200px;
+    height: 150px;
+  }
+}

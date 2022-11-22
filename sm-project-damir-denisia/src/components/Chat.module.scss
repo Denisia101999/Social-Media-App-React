@@ -1,0 +1,96 @@
+.chatPage {
+  padding-top: 6rem;
+  position: absolute;
+  width: 55%;
+  top: 0;
+  right: 15%;
+  .mainChat {
+    width: 70%;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    padding: 10px;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    .messageIcon {
+      font-size: 30px;
+      position: absolute;
+      top: 1%;
+      left: 5px;
+    }
+
+    h4 {
+      margin-left: 30px;
+      margin-bottom: 0;
+    }
+    .chatItems {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: space-around;
+      .chatItem {
+        width: 90%;
+        height: 10%;
+        background-color: whitesmoke;
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        span {
+          font-weight: bold;
+        }
+        .chatProfilePicture {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+        .chatDate {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 10px;
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .chatPage {
+    width: 55%;
+    .mainChat {
+      .messageIcon {
+        font-size: 25px;
+      }
+      .chatItems {
+        margin: 0;
+        .chatItem {
+          height: 4.1rem;
+          .chatDate {
+            margin: 0.1rem;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chatPage {
+    right: 12%;
+    .h4 {
+      font-size: 20px;
+      margin-top: 0.3rem;
+      margin-bottom: 0;
+    }
+    .chatItems {
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+}
